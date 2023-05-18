@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="Images/candado.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/reset.css" />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="https://www.aluracursos.com/" target="_blank"><img src="Images/Logo.png" class="texto-logo" alt="Logotipo de la página" /></a>
+        </h1>
+    </header>
+    <main>
+        <section class="contenedor">
+            <form class="texto-encriptar">
+                <fieldset class="encriptar">
+                    <textarea name="texto" class="texto" id="texto"  placeholder="Ingrese su texto aquí"
+                        cols="35" spellcheck="false"></textarea>
+                    <div class="texto-informativo"><span><img src="Images/advertencia.png" alt=""></span>
+                        <p class="advertencia-minusculas"> Solo letras minúsculas y sin acentos.</p>
+                    </div>
+                </fieldset>
+
+                <fieldset class="boton-uno">
+                    <button class="boton-encriptar" type="button">Encriptar</button>                   
+                </fieldset>
+                <fieldset class="boton-dos">
+                    <button class="boton-desencriptar" type="button">Desencriptar</button>
+                </fieldset>
+            </form>
+            <form class="texto-encriptado">
+                <fieldset class="encriptado">
+                   <img
+                        class="imagen" src="Images/error-404.png" alt="computador">
+                    <h2 class="titulo-mensaje">Ningún mensaje encontrado</h2>
+                    <p class="ingrese-texto">
+                        Escribe un mensaje que desees encriptar o desencriptar.
+                    </p>
+                </fieldset>
+                <span class="texto-copiado-invisible">¡Texto copiado!</span>
+                <button class="boton-invisible">Copiar</button>
+            </form>
+            
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p> &copy Challenge Alura | Developed By David Mateo Torres.</p>
+        </div>
+        <div class="banner">
+            <a href="https://www.linkedin.com/in/mateo-torres-cespedes/" target="_blank" class="a-icon"><img
+                    src="Images/linkedinH.png" alt="Logo de LinkedIn"><img src="Images/linkedin.png" alt=""></a>
+            <a href="https://github.com/torres-mateo" target="_blank" class="a-icon">
+                <img src="Images/github.png">
+                <img src="Images/githubh.png"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

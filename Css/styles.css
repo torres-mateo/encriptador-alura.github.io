@@ -1,0 +1,441 @@
+body{
+    background: linear-gradient(#e4e4e9, #bcbbbb);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    display: flex;
+    width: 43px;
+    height:30px;
+    background-color: #888b8f8c;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8em 2em 0 2.5em;
+    padding: 12px 10px;
+    position: relative;    
+}
+
+.texto-logo{
+    object-fit: cover;
+    top: 2px;
+    position: relative;
+}
+
+.texto-encriptar{
+    display: inline-block;
+    width: 58%;
+    height: 72vh;
+    font-family: 'Montserrat', sans-serif;
+    position:relative;
+}
+
+
+
+.texto{
+    display: flex;
+    position: absolute;
+    padding: 1em;
+    width: 45vw;
+    height: 40vh;
+    left: 7vw;
+    top: 1vh;
+    font-family:'Press Start 2P', cursive ;
+    font-weight: 100;
+    font-size: 28px;
+    margin: 0 ;
+    color: #28292b;
+    resize: none;  
+    background-color: #f7f7f3;
+    border-radius: 2rem;     
+}
+
+.texto::placeholder{
+    color: #7a7a7e;
+    padding: 1vh;
+}
+
+.texto:focus,
+.texto:active{
+    outline:none;
+    border: 2px solid #000;
+    box-shadow: 9px 9px  0 #000;
+    padding: 3%;
+    
+}
+
+.texto-informativo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    position: absolute;
+    width: 75vw;
+    left: 6vw;
+    top: 52vh;      
+}
+
+.advertencia-minusculas{
+    display: inline-block;
+    text-align: start;
+    padding: 0 1.5em;
+    color: #7a7a7e;
+    opacity: 0.9;
+    font-family: 'Press Start 2P', cursive ;
+    font-style:normal;
+    font-weight: 100;
+    font-size: .7em;
+    bottom: 2px
+    
+}
+
+.texto-informativo img{
+    width: 25px;
+    left: 1vw;
+    bottom: 2px;
+    position: relative;
+    
+}
+
+.boton-uno{
+    display:inline-block;
+    flex-direction: row;
+    margin: 0 auto;
+    bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    left: 15%;
+    position: absolute;
+    
+}
+.boton-dos{
+    display:inline-block;
+    flex-direction: row;
+    margin: 0 auto;
+    bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    
+}
+button{
+    margin:.5rem 0;
+    border-radius: .6rem;
+    width: 15rem;
+    height: 3.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0rem;
+}
+
+.boton-encriptar{
+    width: 16vw;
+    border: 2px solid #fbfbfc;
+    background: #01071a;
+    color: #fbfbfc; 
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    
+}
+
+.boton-desencriptar{
+    box-sizing: border-box;
+    width: 16vw;
+    background: #fbfbfc;
+    color: #000; 
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+
+}
+
+.boton-invisible{
+    box-sizing: border-box;
+    width: 16vw;
+    border: 2px solid #000;
+    background: #fbfbfc;
+    color: #000; 
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    opacity:0;
+    
+}
+.boton-copiar{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16vw;
+    border: 2px solid #000;
+    background: #fbfbfc;
+    color: #000; 
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    opacity:1; 
+    top: 12%;
+    right: 5%;
+    position: relative;
+    
+}
+button:hover{
+    display: inline-block;
+    margin:0 0 0.8em 0;
+    bottom: 3.6rem;
+    box-shadow: 6px 7px  0 #000;
+    
+}
+
+.texto-encriptado{
+    display: inline-block;
+    width: 32vw;
+    height: 67vh;
+    background-color: transparent;
+    border-radius: 2rem;  
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+.imagen{
+    display: flex;
+    width: 270px;
+    margin: 0 auto;
+    position: relative;
+}
+.texto-salida{
+    width: 30vw;
+    height: 32vh;
+    padding: 2em;
+    color: #28292b;
+    background-color: #f7f7f3;
+    border: 2px solid #000;
+    box-shadow: 9px 9px  0 #000000;
+    border-radius: 2rem;
+    resize: none;
+    font-family:'Press Start 2P', cursive ;
+    font-weight: 100;
+    font-size: 28px
+}
+
+.titulo-mensaje{
+    padding: 0.5rem 0;
+    display: block;
+    text-align: center;
+    font-family:'Press Start 2P', cursive ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color:#28292b;
+    
+}
+
+.ingrese-texto{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color:#28292b;
+    
+}
+
+.texto-copiado-visible{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: .9rem;
+    letter-spacing: .02rem;
+    font-family:'monserrat' ;
+    color:white;
+    background-color: #0c0d0e93;
+    padding: .6rem 2rem;
+    border-radius: .8rem;
+    display:inline-block;
+    opacity:0.9;
+    left: 40%;
+    position: relative;
+}
+
+.texto-copiado-invisible{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: .9rem;
+    letter-spacing: .02rem;
+    font-family:'monserrat' ;
+    color:white;
+    background-color: #1f222493;
+    padding: .6rem 2rem;
+    border-radius: .8rem;
+    display:inline-block;
+    transition:.7s;
+    opacity:0%;
+    left: 25%;
+    position: relative;
+}
+
+.error{
+    color:#a60909d1 ;
+    text-align: start;
+    resize: none;
+        
+}
+
+.error-aviso{
+    color: #c00606;
+    font-style: normal;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 150%;
+    display: inline-block;
+} 
+.error:focus{
+    border: 2px solid #ba0505;
+    box-shadow: 9px 9px  0 #a10505;
+}
+
+footer{
+    display: block;
+    width: 100vw;
+    font-weight: 500;
+    font-size: .8rem;
+    color: #cbd5e1;
+    text-align: center;
+    background-color: #253248;
+    padding: 1.5rem 0 ;
+}
+
+.banner{
+    width: 70px;
+    margin: 0 auto;
+    padding: 0 0 1rem 0;
+}
+
+.banner img{
+    width: 28px;
+    float:left;
+    padding: 5px 3px 0;
+    
+}
+.a-icon img:last-child{
+    display: none;
+
+}
+.a-icon:hover img:last-child{
+    display: block;
+
+    
+}
+.a-icon:hover img:first-child{
+    display: none;
+} 
+
+
+
+@media(max-width: 921px){
+.logo{
+    margin: .7em 0 0 1em;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.texto-encriptar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+    
+.texto{
+    position: absolute;
+    width: 70vw;
+    height: 44%;
+    font-size: 1.2em;
+}
+.texto:focus{
+    padding: 1em;
+}
+.texto-informativo{
+    width: 90%;
+    top: 68%;
+}
+.boton-uno{
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    left: 8%;
+    bottom: 0%;
+}
+.boton-dos{
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    }
+.boton-encriptar{
+
+    width: 80%;
+    font-size: .7em;
+}
+
+.boton-desencriptar{
+    width: 80%;
+    font-size: .7em;
+}
+ .texto-encriptado{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.encriptado{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.imagen{
+    width: 35vw;
+}
+.titulo-mensaje,
+.ingrese-texto{
+    font-size: 18px;
+    margin-top: .5em ;
+}
+.texto-salida{
+    position: absolute;
+    width: 65vw;
+    height: 50%;
+    margin:.2em 10%;
+    font-size: 1em;
+}
+.boton-copiar{
+    width: 40%;
+    font-size: .7em;
+    top:35%;
+    position: relative;
+}
+.texto-copiado-visible{
+    top:38%;
+    position: relative;
+    left: -5%;
+}
+.texto-copiado-invisible{
+    top:20%;
+    position: relative;
+    left: -5%;
+}
+}
+
